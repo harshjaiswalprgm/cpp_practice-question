@@ -51,12 +51,12 @@ int main(){
 #include<iostream>
 using namespace std;
 int main(){
-    int j=50;
-    int h=10;
-cout<<"j++ is: "<<j++<<endl;
-cout<<"++j is: "<<++j<<endl;
-//cout<<"j-- is: "<<j--<<endl;
-cout<<"--j is: "<<--j<<endl;
-cout<<"h-- is: "<<h--<<endl;
+     int j=50;
+     int h=10;
+//cout<<"j++ is: "<<j++<<endl;
+//cout<<"++j is: "<<++j<<endl;
+cout<<"j-- is: "<<j--<<endl;
+//cout<<"--j is: "<<--j<<endl;
+//cout<<"h-- is: "<<h--<<endl;
     return 0;
 }
