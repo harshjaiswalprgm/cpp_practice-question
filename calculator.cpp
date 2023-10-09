@@ -7,6 +7,7 @@ int main()
     char op;
     cin >> op;
     cin >> num1 >> num2;
+    cout<<"Result of operation is : ";
     switch (op)
     {
     case '+':
