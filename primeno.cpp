@@ -26,21 +26,20 @@ using namespace std;
 int main()
 {
     int n, i, k;
-    cout<< "enter the nth number :" << endl;
+    cout << "enter the nth number :" << endl;
     cin >> n;
-    for (i = 2; i < n; i++)
+    for (i = 2; i < n; i++) // to print prime no. 1-100
     {
         for (k = 2; k < i; k++)
         {
-            if (i%k==0)
+            if (i % k == 0)
             {
                 break;
             }
         }
-        if (k==i)
+        if (k == i)
         {
             cout << k;
         }
     }
-   
 }
