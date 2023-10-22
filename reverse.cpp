@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 
-    int n, r, sum = 0;
+    int n, r, sum = 0;     //r=reminder
     cout << "entre a number :" << endl;
     cin >> n;
     while (n != 0)
