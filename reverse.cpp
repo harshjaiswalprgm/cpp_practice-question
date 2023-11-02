@@ -13,7 +13,7 @@ int main()
         n = n / 10;
     }
 
-    cout << "recerse is :" << sum << endl;
+    cout << "reverse is :" << sum << endl;
 
     return 0;
 }
