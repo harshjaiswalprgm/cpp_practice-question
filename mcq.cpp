@@ -1,53 +1,53 @@
+// #include <iostream>
+
+// class Fraction
+// {
+// public:
+//     int numerator;
+//     int denominator;
+
+//     Fraction(int n, int d) : numerator(n), denominator(d) {}
+
+//     Fraction operator+(const Fraction &other) const
+//     {
+//         int newNumerator = (numerator * other.denominator) + (other.numerator * denominator);
+//         int newDenominator = denominator * other.denominator;
+//         return Fraction(newNumerator, newDenominator);
+//     }
+// };
+
+// int main()
+// {
+//     Fraction f1(1, 2);
+//     Fraction f2(2, 3);
+
+//     Fraction result = f1 + f2;
+//     std::cout << result.numerator << "/" << result.denominator;
+
+//     return 0;
+// }
+
 #include <iostream>
 
-class Fraction
-{
+class MyClass {
 public:
-    int numerator;
-    int denominator;
-
-    Fraction(int n, int d) : numerator(n), denominator(d) {}
-
-    Fraction operator+(const Fraction &other) const
-    {
-        int newNumerator = (numerator * other.denominator) + (other.numerator * denominator);
-        int newDenominator = denominator * other.denominator;
-        return Fraction(newNumerator, newDenominator);
+    explicit operator int() {
+        return data;
     }
+
+private:
+    int data = 5;
 };
 
-int main()
-{
-    Fraction f1(1, 2);
-    Fraction f2(2, 3);
-
-    Fraction result = f1 + f2;
-    std::cout << result.numerator << "/" << result.denominator;
-
-    return 0;
+void printInt(int num) {
+    std::cout << num;
 }
 
-// // #include <iostream>
-
-// // class MyClass {
-// // public:
-// //     explicit operator int() {
-// //         return data;
-// //     }
-
-// // private:
-// //     int data = 5;
-// // };
-
-// // void printInt(int num) {
-// //     std::cout << num;
-// // }
-
-// // int main() {
-// //     MyClass obj;
-// //    printInt(int(obj)); // Line X
-// //     return 0;
-// // }
+int main() {
+    MyClass obj;
+   printInt(int(obj)); // Line X
+    return 0;
+}
 
 // // // printInt(int(obj()));
 
