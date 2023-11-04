@@ -27,27 +27,27 @@
 //     return 0;
 // }
 
-#include <iostream>
+// #include <iostream>
 
-class MyClass {
-public:
-    explicit operator int() {
-        return data;
-    }
+// class MyClass {
+// public:
+//     explicit operator int() {
+//         return data;
+//     }
 
-private:
-    int data = 5;
-};
+// private:
+//     int data = 5;
+// };
 
-void printInt(int num) {
-    std::cout << num;
-}
+// void printInt(int num) {
+//     std::cout << num;
+// }
 
-int main() {
-    MyClass obj;
-   printInt(int(obj)); // Line X
-    return 0;
-}
+// int main() {
+//     MyClass obj;
+//    printInt(int(obj)); // Line X
+//     return 0;
+// }
 
 // // // printInt(int(obj()));
 
@@ -57,61 +57,61 @@ int main() {
 
 // // // printInt(obj.int());
 
-// // #include <iostream>
+// #include <iostream>
 
-// // class MyClass {
-// // public:
-// //     MyClass(char character) : data(character) {}
+// class MyClass {
+// public:
+//     MyClass(char character) : data(character) {}
 
-// //     char getData() const {
-// //         return data;
-// //     }
+//     char getData() const {
+//         return data;
+//     }
 
-// // private:
-// //     char data;
-// // };
+// private:
+//     char data;
+// };
 
-// // int main() {
-// //     MyClass obj = MyClass('A');
-// //     //Missing line
-// //     std::cout << ch;
-// //     return 0;
-// // }
+// int main() {
+//     MyClass obj = MyClass('A');
+//     //Missing line
+//     std::cout << ch;
+//     return 0;
+// }
 
-// // #include <iostream>
+// #include <iostream>
 
-// // class MyClass {
-// // public:
-// //     explicit MyClass(int value) : data(value) {}
+// class MyClass {
+// public:
+//     explicit MyClass(int value) : data(value) {}
 
-// //     int getData() const {
-// //         return data;
-// //     }
+//     int getData() const {
+//         return data;
+//     }
 
-// // private:
-// //     int data;
-// // };
+// private:
+//     int data;
+// };
 
-// // int main() {
-// //     int num = 15;
-// //     //Missing line
-// //      MyClass obj(num); // Missing line
-// //     std::cout << obj.getData();
-// //     return 0;
-// // }
+// int main() {
+//     int num = 15;
+//     //Missing line
+//      MyClass obj(num); // Missing line
+//     std::cout << obj.getData();
+//     return 0;
+// }
 
-// // #include <iostream>
-// // using namespace std;
+// #include <iostream>
+// using namespace std;
 
-// // class student {
-// // public:
-// //     int rno, m1, m2;
-// //     void get() {
-// //         rno = 15;
-// //         m1 = 10;
-// //         m2 = 10;
-// //     }
-// // };
+// class student {
+// public:
+//     int rno, m1, m2;
+//     void get() {
+//         rno = 15;
+//         m1 = 10;
+//         m2 = 10;
+//     }
+// };
 
 // // class sports {
 // // public:
@@ -140,34 +140,34 @@ int main() {
 // //     return 0;
 // // }
 
-// // #include <iostream>
-// // using namespace std;
+// #include <iostream>
+// using namespace std;
 
-// // class A {
-// // public:
-// //     A(int n) {
-// //         cout << n;
-// //     }
-// // };
+// class A {
+// public:
+//     A(int n) {
+//         cout << n;
+//     }
+// };
 
-// // class B : public A {
-// // public:
-// //     B(int n, double d) : A(n) {
-// //         cout << d;
-// //     }
-// // };
+// class B : public A {
+// public:
+//     B(int n, double d) : A(n) {
+//         cout << d;
+//     }
+// };
 
-// // class C : public B {
-// // public:
-// //     C(int n, double d, char ch) : B(n, d) {
-// //         cout << ch;
-// //     }
-// // };
+// class C : public B {
+// public:
+//     C(int n, double d, char ch) : B(n, d) {
+//         cout << ch;
+//     }
+// };
 
-// // int main() {
-// //     C c(5, 4.3, 'R');
-// //     return 0;
-// // }
+// int main() {
+//     C c(5, 4.3, 'R');
+//     return 0;
+// }
 
 // // #include <iostream>
 // // using namespace std;
@@ -304,45 +304,45 @@ int main() {
 // //     return 0;
 // // }
 
-// // #include <iostream>
+// #include <iostream>
 
-// // class Base {
-// // public:
-// //     Base() {
-// //         std::cout << "Base Constructor" << std::endl;
-// //     }
+// class Base {
+// public:
+//     Base() {
+//         std::cout << "Base Constructor" << std::endl;
+//     }
 
-// //     ~Base() {
-// //         std::cout << "Base Destructor" << std::endl;
-// //     }
-// // };
+//     ~Base() {
+//         std::cout << "Base Destructor" << std::endl;
+//     }
+// };
 
-// // class Derived : public Base {
-// // public:
-// //     Derived() {
-// //         std::cout << "Derived Constructor" << std::endl;
-// //     }
+// class Derived : public Base {
+// public:
+//     Derived() {
+//         std::cout << "Derived Constructor" << std::endl;
+//     }
 
-// //     ~Derived() {
-// //         std::cout << "Derived Destructor" << std::endl;
-// //     }
-// // };
+//     ~Derived() {
+//         std::cout << "Derived Destructor" << std::endl;
+//     }
+// };
 
-// // class AnotherDerived : public Derived {
-// // public:
-// //     AnotherDerived() {
-// //         std::cout << "AnotherDerived Constructor" << std::endl;
-// //     }
+// class AnotherDerived : public Derived {
+// public:
+//     AnotherDerived() {
+//         std::cout << "AnotherDerived Constructor" << std::endl;
+//     }
 
-// //     ~AnotherDerived() {
-// //         std::cout << "AnotherDerived Destructor" << std::endl;
-// //     }
-// // };
+//     ~AnotherDerived() {
+//         std::cout << "AnotherDerived Destructor" << std::endl;
+//     }
+// };
 
-// // int main() {
-// //     AnotherDerived obj;
-// //     return 0;
-// // }
+// int main() {
+//     AnotherDerived obj;
+//     return 0;
+// }
 
 // // #include <iostream>
 
@@ -368,66 +368,66 @@ int main() {
 // //     }
 // // };
 
-// // int main() {
-// //     Base* b = new Derived();
-// //     delete b;
-// //     return 0;
-// // }
-
-// // #include <iostream>
-
-// // class Base {
-// // public:
-// //     Base() {
-// //         std::cout << "Creating Base object." << std::endl;
-// //     }
-
-// //     ~Base() {
-// //         std::cout << "Destroying Base object." << std::endl;
-// //     }
-// // };
-
-// // class Derived : public Base {
-// // public:
-// //     Derived() {
-// //         std::cout << "Creating Derived object." << std::endl;
-// //     }
-
-// //     ~Derived() {
-// //         std::cout << "Destroying Derived object." << std::endl;
-// //     }
-// // };
-
-// // int main() {
-// //     Derived d;
-// //     return 0;
-// // }
+// int main() {
+//     Base* b = new Derived();
+//     delete b;
+//     return 0;
+// }
 
 // #include <iostream>
 
 // class Base {
 // public:
 //     Base() {
-//         std::cout << "Base Constructor" << std::endl;
+//         std::cout << "Creating Base object." << std::endl;
 //     }
 
 //     ~Base() {
-//         std::cout << "Base Destructor" << std::endl;
+//         std::cout << "Destroying Base object." << std::endl;
 //     }
 // };
 
 // class Derived : public Base {
 // public:
 //     Derived() {
-//         std::cout << "Derived Constructor" << std::endl;
+//         std::cout << "Creating Derived object." << std::endl;
 //     }
 
 //     ~Derived() {
-//         std::cout << "Derived Destructor" << std::endl;
+//         std::cout << "Destroying Derived object." << std::endl;
 //     }
 // };
 
 // int main() {
-//     Derived obj;
+//     Derived d;
 //     return 0;
 // }
+
+#include <iostream>
+
+class Base {
+public:
+    Base() {
+        std::cout << "Base Constructor" << std::endl;
+    }
+
+    ~Base() {
+        std::cout << "Base Destructor" << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    Derived() {
+        std::cout << "Derived Constructor" << std::endl;
+    }
+
+    ~Derived() {
+        std::cout << "Derived Destructor" << std::endl;
+    }
+};
+
+int main() {
+    Derived obj;
+    return 0;
+}
