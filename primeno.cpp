@@ -39,7 +39,7 @@ int main()
         }
         if (k == i)
         {
-            cout << k;
+            cout << k<<endl;
         }
     }
 }
